@@ -11,5 +11,4 @@ RUN cd ./public && npm install && npm run sass && npm run coffee
 
 EXPOSE 3000
 
-ENTRYPOINT ["./entrypoint.sh"]
 CMD ["pm2", "start", "-x", "--no-daemon", "index.js"]
