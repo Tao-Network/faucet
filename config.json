@@ -5,7 +5,7 @@
     "secret": "6LeKZEAUAAAAAHNB3uSrfvTIebV-kH4w77nykq8J"
   },
   "Ethereum": {
-    "etherToTransfer": 0.5,
+    "etherToTransfer": 1,
     "gasLimit": "0x7b0c",
     "live": {
       "rpc": "https://core.tomocoin.io",
