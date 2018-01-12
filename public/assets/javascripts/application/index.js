@@ -5,12 +5,13 @@ $(function() {
     	$this = $(this);
 		loader.removeClass("hidden");
 		var receiver = $("#receiver").val();
+    var captcha =  $("#g-recaptcha-response").val();
 		$.ajax({
 		  	url:"/",
 		  	type:"POST",
 		  	data: {
-          $this.serialize(),
-		  		receiver: receiver
+		  		receiver: receiver,
+          captcha: captcha
 		  	}
 		}).done(function(data) {
 			if (!data.success) {
@@ -23,7 +24,7 @@ $(function() {
 				$("#receiver").val('');
 				loader.addClass("hidden");
 				swal("Success",
-				  "0.5 POA is successfully transfered to " + receiver + "</a>",
+				  "0.5 TOMO is successfully transfered to " + receiver +" in Tx<br /><a href='https://explorer.tomocoin.io/#/tx/" + data.success.txHash + "' target='_blank'>" + data.success.txHash + "</a>",
 				  "success"
 				);
 				grecaptcha.reset();

@@ -6,7 +6,7 @@ module.exports = function (app) {
 	var validateCaptcha = app.validateCaptcha;
 
 	app.post('/', function(request, response) {
-		var recaptureResponse = request.body["g-recaptcha-response"];
+		var recaptureResponse = request.body.captcha;
 		if (!recaptureResponse) return generateErrorResponse(response, {code: 500, title: "Error", message: "Invalid captcha"});
 
 		var receiver = request.body.receiver;
