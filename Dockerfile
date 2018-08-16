@@ -1,5 +1,4 @@
 FROM node:8
-MAINTAINER ToMo Team
 
 RUN npm install -g pm2
 
