@@ -31,7 +31,7 @@ module.exports = function (app) {
 		const privateKeyHex = Buffer.from(senderPrivateKey, 'hex')
 		if (!web3.isAddress(receiver)) return generateErrorResponse(response, {code: 500, title: "Error", message: "invalid address"});
 		
-		var gasPrice = parseInt(web3.eth.gasPrice);
+		var gasPrice = 1; // parseInt(web3.eth.gasPrice);
 		var gasPriceHex = web3.toHex(gasPrice);
 		var amount = parseInt(web3.toWei(config.Ethereum.etherToTransfer, "ether"));
 		var nonce = web3.eth.getTransactionCount(config.Ethereum[config.environment].account);
