@@ -24,7 +24,7 @@ $(function() {
 				$("#receiver").val('');
 				loader.addClass("hidden");
 				swal("Success",
-				  "1 TOMO is successfully transfered to " + receiver +" in Tx<br /><a href='https://explorer.tomocoin.io/#/tx/" + data.success.txHash + "' target='_blank'>" + data.success.txHash + "</a>",
+				  "15 TOMO is successfully transfered to " + receiver +" in Tx<br /><a href='https://scan.testnet.tomochain.com/txs/" + data.success.txHash + "' target='_blank'>" + data.success.txHash + "</a>",
 				  "success"
 				);
 				grecaptcha.reset();
