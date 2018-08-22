@@ -5,6 +5,7 @@
     "secret": "6LeKZEAUAAAAAHNB3uSrfvTIebV-kH4w77nykq8J"
   },
   "Ethereum": {
+    "networkId": 89,
     "etherToTransfer": 15,
     "gasLimit": "0x7b0c",
     "live": {
