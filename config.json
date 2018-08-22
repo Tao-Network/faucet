@@ -2,7 +2,7 @@
   "environment": "live",
   "debug": false,
   "Captcha": {
-    "secret": "6LeKZEAUAAAAAHNB3uSrfvTIebV-kH4w77nykq8J"
+    "secret": "xxx"
   },
   "Ethereum": {
     "etherToTransfer": 15,
