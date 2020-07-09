@@ -8,8 +8,8 @@
     "etherToTransfer": 15,
     "gasLimit": "0x7b0c",
     "live": {
-      "rpc": "https://testnet.tomochain.com",
-      "account": "0xfa6FC26F897027289017bEC8279a3b4b2F3c50D4",
+      "rpc": "https://rpc.testnet.tao.network",
+      "account": "0x07d9f80e7d570587572bc34dafe9c3231d8264d4",
       "privateKey": "xxx"
     }
   }

@@ -1,4 +1,4 @@
-## Tomochain Testnet Faucet
+## Tao Testnet Faucet
 
 ### Building from source
 
